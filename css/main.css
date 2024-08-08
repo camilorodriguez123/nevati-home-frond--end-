@@ -10,14 +10,15 @@
  }
 *{
      text-decoration: none;
-     border: 2px dotted red;
+     border: 1px dotted red; 
  }
 
 html {
     font-size: 62.5%;
-}
+ }
 body{
     margin: 0;
+    font-family: "Oswald", sans-serif;
     font-size: 16px;        /** 1rem = 10px */ 
 }
 
@@ -33,25 +34,26 @@ body{
 
     }
 
-.container {
-            display: ruby-text;
-            margin: 20rem 35rem;
-            padding: 5rem;
-            /* align-items: revert-layer; */
-        }
-
 .text-box {
-            width: 50%;
-            margin: 9rem auto;
+            width: 711px;
+            margin: 10rem auto;
             background-color: rgba(0, 0, 0, .5);
             color: white;
-            height: 465px;
+            height: 384px;
+        }
+.Infography {
+            padding-block: 4rem;
         }
 
  article.title {
-            padding: 2.5rem 1.7rem;
+    
+        font-family: "Poiret One", sans-serif;
+        font-size: 4.8rem;
+        padding: 2.5rem 1.7rem;
         }
+
 
  article.content {
             padding: 1.7rem;
+            font-size: 2.2rem;
         }
