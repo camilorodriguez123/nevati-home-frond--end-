@@ -6,34 +6,164 @@
     <title>NEVATI HOME</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200&family=Oswald:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200&family=Oswald:wght@200&family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+
+
     <link rel="stylesheet" href="./css/main.css">
+</head>
 </head>
 
 
 
 <body>
-    <header class="header">Encabezado</header>
-
+    <header class="header">
+        <div class="logo">
+            <img src="./img/Captura_de_pantalla_2024-07-19_184334-removebg-preview 1.png" alt="nevatihome">
+        </div>
+        <div class="menu-hamburguesa">
+            <img src="./img/Vector 4.png" alt="">
+        </div>
+        <div class="menu">
+            <div class="menu-items">
+                <ul class="menu-items-principal">
+                    <li class="items">
+                        <a class="items-menu" href="#">
+                            SABANAS
+                        </a>
+                    </li>
+                    <li class="items l">
+                        <a class="items-menu" href="#">
+                            COLCHA ESPAÑOLA
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a class="items-menu" href="#">
+                            ACCESORIOS
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-accesibilidad">
+                <div class="ayuda">
+                    <ul class="menu-ayuda">
+                        <li>
+                            <a class="comunicate comu" href="#">
+                                COMUNICATE CON NOSOTROS
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-ayuda comu" href="#">
+                                AYUDA
+                            </a>
+                        </li>
+                        <li class="accesibilidad">
+                            <a href="#">
+                                <img src="./img/image 5.png" alt="accesibilidad">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-buscador">
+                    <form class="buscador">
+                        <div class="buscar">
+                            <input class="busca" type="text" placeholder="BUSCAR...">
+                        </div>
+                        <button class="lupa">
+                            <img src="./img/image 3.png" alt="buscar">
+                        </button>
+                    </form>
+                    <ul class="menu-usuario">
+                        <li class="me-gusta">
+                            <a href="#">
+                                <img src="./img/fi-rs-heart.png" alt="">
+                            </a>
+                        </li>
+                        <li class="usuario">
+                            <a href="#">
+                                <img src="./img/fi-rs-user.png" alt="">
+                            </a>
+                        </li>
+                        <li class="carro">
+                            <a href="#">
+                                <img src="./img/fi-rs-shopping-cart.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
     <main class="main">
-        <!-- <section class="slider">
+        <section class="nosotros">
             <div class="text-box">
                 <div class="Infography">
                 <article class="title">CONOCE NUESTROS PRODUCTOS</article>
-                <article class="content">Descubre la exquisitez y el confort de nuestras sabanas NEVATIHOME, fabricadas con filamentos de textura avanzada y calidad, alegro con 200 hilos y Beta con 180 hilos. Son el resultado de colaboraciones con laboratorios asociados a <b>TOMKER</b> , donde se aplican altos estándares de control en calidad. </article>
+                <p class="content">Descubre la exquisitez y el confort de nuestras sabanas NEVATIHOME, fabricadas con filamentos de textura avanzada y calidad, alegro con 200 hilos y Beta con 180 hilos. Son el resultado de colaboraciones con laboratorios asociados a <b>TOMKER</b>, donde se aplican altos estándares de control en calidad. </p>
                 </div>
             </div>
-        </section> -->
-
-        <section class="Black-friday">
-            Black friday
         </section>
 
-        <section class="Products">
-            Nuestros productos
+        <section class="black-friday">
+            <div class="black-friday-1">
+                <div class="black-friday-text">
+                    <p class="black-friday-title">BLACK FRIDAY</p>
+                    <p class="black-friday-p">GRANDES DESCUENTOS</p>
+                </div>
+                <div class="black-friday-boton">
+                    <button class="black-friday-compar">
+                        +COMPRAR AHORA 
+                    </button>
+                </div>
+            </div>
         </section>
-
+        <section>
+            nuestros productos 
+        </section>
+        <section>
+            <div class="pintas">
+                <div>
+                    <p class="titulo-pintas">NUESTRAS PINTAS</p>
+                    <p class="descrip-pintas">DIFENTES DISEÑOS Y TELAS CON MISMA CALIDAD</p>
+                </div>
+            </div>
+            <div class="slider" x-data="{start: true, end: false}">
+                <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+                    <div class="slider__item ancho">
+                        <img class="slider__image" src="./img/Captura de pantalla 2024-08-06 212504.png" alt="Image">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__image" src="./img/Captura de pantalla 2024-08-06 212539.png" alt="Image">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__image" src="./img/Captura de pantalla 2024-08-06 212608.png" alt="Image">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__image" src="./img/Captura de pantalla 2024-08-06 212626.png" alt="Image">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__image" src="./img/Captura de pantalla 2024-08-06 212645.png" alt="Image">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__image" src="./img/Captura de pantalla 2024-08-06 212659.png" alt="Image">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__image" src="./img/Captura de pantalla 2024-08-06 212801.png" alt="Image">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__image" src="./img/Captura de pantalla 2024-08-06 212823.png" alt="Image">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__image" src="./img/Captura de pantalla 2024-08-06 212838.png" alt="Image">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__image" src="./img/Captura de pantalla 2024-08-06 212900.png" alt="Image">
+                    </div>
+                </div>
+        </section>
     </main>
     
     <footer class="footer">Pie de pagina</footer>

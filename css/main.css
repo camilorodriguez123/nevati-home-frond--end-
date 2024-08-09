@@ -17,8 +17,7 @@ html{
 }
 body{
     margin: 0;
-    font-family: "Oswald", sans-serif;
-    font-size: 16px;        /** 1rem = 10px */ 
+    font-size: 16px;
 }
 .header{
     font-family: "Oswald", sans-serif;
@@ -28,7 +27,6 @@ body{
     padding: 0.5rem;
     justify-content: space-between;
 }
-
 .menu-hamburguesa{
     margin: 2.5rem;
 }
@@ -92,11 +90,15 @@ body{
         display: flex;
         align-items: center;
     }
+    .buscar {
+        width: 100%;
+    }
     .buscador{
         display: flex;
         height: 3.6rem;
         margin: 1.4rem; 
         width : 65%;
+        justify-content: space-between;
     }
     input.busca {
         font-family: "Oswald", sans-serif;
@@ -151,51 +153,111 @@ body{
         display: flex;
     }
 }
-
-/* Hay otro Slider 
-.slider{
-    background-image: url(../images/image\ 1.png);
-    
+.nosotros{
+    background-image: url(../img/image\ 1.png);
     background-repeat: no-repeat;
     width: 100%;
-    
-
     background-position-x: center;
     background-size: cover;
     display: flex;
-} */
+} 
 
 .text-box {
-    width: 75%;
+    width: 60%;
     margin: 10rem auto;
     background-color: rgba(0, 0, 0, .5);
     color: white;
 }
 .Infography {
-    padding-block: 4rem;
+    display: block;
+    margin: 5rem;
 }
 
 article.title {
-
-font-family: "Poiret One", sans-serif;
-font-size: 4rem;
-padding: 2.5rem 1.7rem;
+    font-family: "Poiret One", sans-serif;
+    font-size: 4rem;
+    margin: 0;
 }
-
-
-article.content {
-    padding: 1.7rem;
+.content {
     font-size: 2.2rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
+    margin-top: 5rem;
+    letter-spacing: 0.2rem;
 }
 
 @media ( min-width: 365px ) {
 
     article.title {
-
-        font-family: "Poiret One", sans-serif;
         font-size: 4.8rem;
-        padding: 2.5rem 1.7rem;
-        }
+    }
     
 }
+@media ( min-width: 1500px ) {
+    .text-box {
+        width: 50%;
+        margin: 10rem auto;
+        background-color: rgba(0, 0, 0, .5);
+        color: white;
+    }
+}
 
+.black-friday{
+    background-image: url(../img/image\ 24.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.black-friday-1{
+    width: 90%;
+    margin: auto;
+    font-family: "Oswald", sans-serif;
+}
+
+.black-friday-title{
+    color: var(--amarillo);
+    font-size: 12.8rem;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 0.7rem;
+}
+.black-friday-p{
+    color: var(--amarillo);
+    font-size: 6.4rem;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 0.5rem;
+}
+button.black-friday-compar{
+    border: transparent;
+    background-color: var(--amarillo);
+    padding: 1rem 3rem;
+    font-family: "Oswald", sans-serif;
+    color: var(--vinotinto);
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 3rem 0 3rem 0 ;
+    letter-spacing: 0.3rem;
+}
+
+.pintas{
+    font-family: "Oswald", sans-serif;
+    color: var(--vinotinto);
+    display: flex;
+    justify-content: center;
+    margin: 4rem;
+}
+.titulo-pintas{
+    text-align: center;
+    margin: 1rem;
+    font-size: 4rem;
+    font-weight: 400;
+}
+.descrip-pintas{
+    text-align: center;
+    margin: 1rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
